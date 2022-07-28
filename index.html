@@ -1,0 +1,821 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="description"
+      content="This website to showcase the work I have done so far and my resume."
+    />
+    <meta name="keywords" content="HTML, CSS, JavaScript, Portfolio Website" />
+    <meta name="author" content="Arti Maske" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Website</title>
+    <link
+      rel="shortcut icon"
+      href="/images/favicon/favicon.ico"
+      type="image/x-icon"
+    />
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png" />
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="/apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="/apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="/apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="/android-icon-192x192.png"
+    />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
+    <meta name="theme-color" content="#ffffff" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="/js/index.js" defer></script>
+  </head>
+  <body>
+    <!---------------------------------
+           Header Section
+    ------------------------------------>
+    <header class="header">
+      <img src="images/logo.png" alt="main logo" class="logo" />
+      <nav class="navbar">
+        <ul class="navbar-lists">
+          <li>
+            <a href="pages/about.html" class="navbar-link home-link">About</a>
+          </li>
+
+          <li>
+            <a href="pages/service.html" class="navbar-link service-link"
+              >Services</a
+            >
+          </li>
+
+          <li>
+            <a href="#section-portfolio" class="navbar-link portfolio-link"
+              >Portfolio</a
+            >
+          </li>
+
+          <li>
+            <a href="pages/contact.html" class="navbar-link contact-link"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <div class="mobile-navbar-btn">
+        <ion-icon name="menu-outline" class="mobile-nav-icon"></ion-icon>
+        <ion-icon name="close-outline" class="mobile-nav-icon"></ion-icon>
+      </div>
+    </header>
+
+    <!---------------------------------
+            Hero Section
+    ------------------------------------>
+    <main>
+      <section class="section-hero section">
+        <div class="container grid grid-two-column">
+          <!-- hero section left side -->
+          <div class="section-hero-data">
+            <p class="hero-top-data">Hey</p>
+            <h1 class="hero-heading">
+              <i>I'am <span>Arti</span> Maske</i>
+            </h1>
+            <p>Creative Web Developer / Dreamer</p>
+            <div>
+              <a href="contact.html" class="btn hireme-btn">Hire Me</a>
+            </div>
+          </div>
+
+          <!-- hero section right side -->
+          <div class="section-hero-image">
+            <img
+              src="images/hero.jpg"
+              alt="this is my photo class"
+              class="hero-img"
+            />
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!---------------------------------
+           My bio-data section
+    ------------------------------------>
+    <section class="section-bio-data section">
+      <div class="container grid grid-two-column">
+        <div class="bio-image">
+          <img src="images/biodata.jpg" alt="my bio data img" />
+          <!-- for lazy loading image 
+				 src="images/lazy1.jpg"
+				 data-src="images/biodata.jpg" 
+				 loading="lazy"  
+				-->
+        </div>
+        <div class="bio-data">
+          <h2 class="common-heading">My Bio-Data</h2>
+          <p>
+            Innovative web developer with over 2 years of front-end experience
+            and passion for responsive website design. Seeking for new
+            opportunities and challenges that will expand my skill set.Capable
+            of continuous learning from senior developers. However, my friends,
+            colleagues, and family describe open-minded, hardworking.
+          </p>
+          <div class="bio-data-tech">
+            <div class="bio-tech">
+              <h3>HTML5</h3>
+              <div class="bio-progress-bar">
+                <span>90%</span>
+              </div>
+            </div>
+            <div class="bio-tech">
+              <h3>CSS3</h3>
+              <div class="bio-progress-bar bio-progress-2">
+                <span>80%</span>
+              </div>
+            </div>
+            <div class="bio-tech">
+              <h3>JavaScript</h3>
+              <div class="bio-progress-bar bio-progress-3">
+                <span>70%</span>
+              </div>
+            </div>
+            <div class="bio-tech">
+              <h3>Bootstrap</h3>
+              <div class="bio-progress-bar bio-progress-4">
+                <span>65%</span>
+              </div>
+            </div>
+            <div class="bio-tech">
+              <h3>ReactJS</h3>
+              <div class="bio-progress-bar bio-progress-5">
+                <span>55%</span>
+              </div>
+            </div>
+          </div>
+          <div class="bio-data-btn">
+            <a
+              href="https://drive.google.com/file/d/16JpzKwlTTlYPMrCFPwOA6sDXtEVwQP-7/view?usp=sharing"
+              class="btn"
+              target="_blank"
+              >Download CV</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!---------------------------------
+           my portfolio section
+    ------------------------------------>
+    <section class="section section-portfolio" id="portfolio-section">
+      <div class="container">
+        <h2 class="common-heading">Latest Work</h2>
+        <p>
+          Here you can see my latest project which I developed using different
+          technologies.
+        </p>
+      </div>
+      <div class="p-btns">
+        <div class="btn p-btn" data-btn-num="1">Html/css</div>
+        <div class="btn p-btn" data-btn-num="2">JavaScript</div>
+        <div class="btn p-btn" data-btn-num="3">ReactJS</div>
+      </div>
+      <div class="container grid grid-three-column portfolio-images">
+        <div class="img-overlay p-btn--1">
+          <img src="images/folio/1.jpg" alt="my html/css project" />
+          <div class="overlay">
+            <a
+              href="https://artimaske.github.io/Omnifood-App/"
+              target="_blank"
+              class="common-heading"
+              >project 1</a
+            >
+          </div>
+        </div>
+        <div class="img-overlay p-btn--1">
+          <img src="images/folio/2.jpg" alt="my html/css project" />
+          <div class="overlay">
+            <a
+              href="https://artimaske.github.io/TinDog/"
+              target="_blank"
+              class="common-heading"
+              >project 2</a
+            >
+          </div>
+        </div>
+        <div class="img-overlay p-btn--1">
+          <img src="images/folio/3.jpg" alt="my html/css project" />
+          <div class="overlay">
+            <a
+              href="https://artimaske.github.io/css-main-project/"
+              target="_blank"
+              class="common-heading"
+              >project 3</a
+            >
+          </div>
+        </div>
+        <div class="img-overlay p-btn--2">
+          <img src="images/folio/4.jpg" alt="my html/css project" />
+          <div class="overlay">
+            <a
+              href="https://artimaske.github.io/Pig-Game/"
+              target="_blank"
+              class="common-heading"
+              >project 1</a
+            >
+          </div>
+        </div>
+        <div class="img-overlay p-btn--2">
+          <img src="images/folio/5.jpg" alt="my html/css project" />
+          <div class="overlay">
+            <a
+              href="https://artimaske.github.io/main-javascript-calculator-project/"
+              target="_blank"
+              class="common-heading"
+              >project 2</a
+            >
+          </div>
+        </div>
+        <div class="img-overlay p-btn--2">
+          <img src="images/folio/6.jpg" alt="my html/css project" />
+          <div class="overlay">
+            <a
+              href="https://artimaske.github.io/main-javascript-project1/"
+              target="_blank"
+              class="common-heading"
+              >project 3</a
+            >
+          </div>
+        </div>
+        <div class="img-overlay p-btn--3">
+          <img src="images/folio/7.jpg" alt="my html/css project" />
+          <div class="overlay">
+            <a
+              href="https://artimaske.github.io/Omnifood-App/"
+              target="_blank"
+              class="common-heading"
+              >project 1</a
+            >
+          </div>
+        </div>
+        <div class="img-overlay p-btn--3">
+          <img src="images/folio/8.jpg" alt="my html/css project" />
+          <div class="overlay">
+            <a
+              href="https://artimaske.github.io/Omnifood-App/"
+              target="_blank"
+              class="common-heading"
+              >project 2</a
+            >
+          </div>
+        </div>
+        <div class="img-overlay p-btn--3">
+          <img src="images/folio/1.jpg" alt="my html/css project" />
+          <div class="overlay">
+            <a
+              href="https://artimaske.github.io/Omnifood-App/"
+              target="_blank"
+              class="common-heading"
+              >project 3</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!---------------------------------
+         Resume Section  
+    ------------------------------------>
+    <section class="section-resume section">
+      <div class="container grid grid-two-column">
+        <!-- resume left side  -->
+        <div class="resume-img">
+          <img src="images/biodata.jpg" alt="my  pic" />
+        </div>
+
+        <!-- resume right side  -->
+        <div class="resume-data">
+          <h2 class="common-heading">resume</h2>
+          <p class="resume-para">my work experience</p>
+
+          <div class="resume-data-subsection">
+            <div class="resume-data-left">
+              <h3>Frontend Development Industry Training</h3>
+              <div class="grid grid-two-column">
+                <p><ion-icon name="business-outline"></ion-icon> Brainnest</p>
+                <p>
+                  <ion-icon name="location-outline"></ion-icon> Stuttgart,
+                  Germany
+                </p>
+              </div>
+            </div>
+
+            <div class="resume-data-right">
+              <p class="resume-data-button">Internship</p>
+              <p>
+                <ion-icon name="calendar-outline"></ion-icon>
+                <span>June 2022 - July 2022</span>
+              </p>
+            </div>
+          </div>
+
+          <!-- 2nd work experience  -->
+          <div class="resume-data-subsection">
+            <div class="resume-data-left">
+              <h3>Frontend Web Developer</h3>
+              <div class="grid grid-two-column">
+                <p>
+                  <ion-icon name="business-outline"></ion-icon> WebHub
+                  Technology
+                </p>
+                <p><ion-icon name="location-outline"></ion-icon> Pune, India</p>
+              </div>
+            </div>
+
+            <div class="resume-data-right">
+              <p class="resume-data-button">fulltime</p>
+              <p>
+                <ion-icon name="calendar-outline"></ion-icon>
+                <span>Oct 2018 - Sep 2020</span>
+              </p>
+            </div>
+          </div>
+
+          <!-- Education section  -->
+          <div class="resume-data-bottom-subsection">
+            <p class="resume-para">Education</p>
+
+            <!-- 1st college  -->
+            <div class="resume-data-subsection">
+              <div class="resume-data-left">
+                <h3>Bachelor in Information Technology</h3>
+                <div class="grid grid-two-column">
+                  <p>
+                    <ion-icon name="business-outline"></ion-icon>MIT college,
+                    Pune University
+                  </p>
+                  <p>
+                    <ion-icon name="location-outline"></ion-icon> Pune, India
+                  </p>
+                </div>
+              </div>
+
+              <div class="resume-data-right">
+                <p class="resume-data-button">Bachelors</p>
+                <p>
+                  <ion-icon name="calendar-outline"></ion-icon>
+                  <span>Sep 2024 - July 2017</span>
+                </p>
+              </div>
+            </div>
+
+            <!-- 2nd college  -->
+            <div class="resume-data-subsection">
+              <div class="resume-data-left">
+                <h3>Diploma in Information Technology</h3>
+                <div class="grid grid-two-column">
+                  <p>
+                    <ion-icon name="business-outline"></ion-icon> YCIP College,
+                    Maharashtra State Board
+                  </p>
+                  <p>
+                    <ion-icon name="location-outline"></ion-icon> Beed, India
+                  </p>
+                </div>
+              </div>
+
+              <div class="resume-data-right">
+                <p class="resume-data-button">Diploma</p>
+                <p>
+                  <ion-icon name="calendar-outline"></ion-icon>
+                  <span>Aug 2021 - June 2013</span>
+                </p>
+              </div>
+            </div>
+            <!-- end  -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!---------------------------------
+         services section  
+    ------------------------------------>
+    <section class="section section-services">
+      <div class="container">
+        <h2 class="common-heading">Services Offer</h2>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit.Quod ullam,
+          reprehenderit corporis laborum
+        </p>
+      </div>
+      <!-- services offers card -->
+      <div class="container grid grid-three-column">
+        <div class="service-box">
+          <ion-icon name="desktop-sharp" class="service-icon"></ion-icon>
+          <h3>Web Design</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.Laborum
+            perferendis dignissimos perspiciatis odit consequatur ipsam
+          </p>
+        </div>
+
+        <div class="service-box">
+          <ion-icon name="logo-web-component" class="service-icon"></ion-icon>
+          <h3>Web Development</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.Laborum
+            perferendis dignissimos perspiciatis odit consequatur ipsam
+          </p>
+        </div>
+
+        <div class="service-box">
+          <ion-icon name="camera-outline" class="service-icon"></ion-icon>
+          <h3>Photography</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.Laborum
+            perferendis dignissimos perspiciatis odit consequatur ipsam
+          </p>
+        </div>
+
+        <div class="service-box">
+          <ion-icon name="phone-portrait-sharp" class="service-icon"></ion-icon>
+          <h3>Mobile Apps</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.Laborum
+            perferendis dignissimos perspiciatis odit consequatur ipsam
+          </p>
+        </div>
+
+        <div class="service-box">
+          <ion-icon name="apps-outline" class="service-icon"></ion-icon>
+          <h3>App Interface</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.Laborum
+            perferendis dignissimos perspiciatis odit consequatur ipsam
+          </p>
+        </div>
+
+        <div class="service-box">
+          <ion-icon name="shapes-outline" class="service-icon"></ion-icon>
+          <h3>Graphic Design</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.Laborum
+            perferendis dignissimos perspiciatis odit consequatur ipsam
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!---------------------------------
+         Testimonial section  
+    ------------------------------------>
+    <section class="section section-testimonial">
+      <div class="container">
+        <h2 class="common-heading">Happy Clients Works</h2>
+        <div class="swiper mySwiper container">
+          <div class="swiper-wrapper">
+            <!-- section start -->
+            <div class="swiper-slide">
+              <div class="swiper-client-msg">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Voluptates cum provident alias! Inventore, architecto quod?
+                </p>
+              </div>
+              <div class="swiper-client-data grid grid-two-column">
+                <figure>
+                  <img src="images/clients/a.jpg" alt="client review" />
+                </figure>
+                <div class="client-data-details">
+                  <p>Arti Kotule</p>
+                  <p>Software Engineer</p>
+                </div>
+              </div>
+            </div>
+            <!-- section end -->
+            <div class="swiper-slide">
+              <div class="swiper-client-msg">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Voluptates cum provident alias! Inventore, architecto quod?
+                </p>
+              </div>
+              <div class="swiper-client-data grid grid-two-column">
+                <figure>
+                  <img src="images/clients/d.jpg" alt="client review" />
+                </figure>
+                <div class="client-data-details">
+                  <p>Kishor Kotule</p>
+                  <p>DevOps Engineer</p>
+                </div>
+              </div>
+            </div>
+            <!-- section end -->
+            <div class="swiper-slide">
+              <div class="swiper-client-msg">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Voluptates cum provident alias! Inventore, architecto quod?
+                </p>
+              </div>
+              <div class="swiper-client-data grid grid-two-column">
+                <figure>
+                  <img src="images/clients/b.jpg" alt="client review" />
+                </figure>
+                <div class="client-data-details">
+                  <p>Mona Tank</p>
+                  <p>front-end Developer</p>
+                </div>
+              </div>
+            </div>
+            <!-- section end -->
+            <div class="swiper-slide">
+              <div class="swiper-client-msg">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Voluptates cum provident alias! Inventore, architecto quod?
+                </p>
+              </div>
+              <div class="swiper-client-data grid grid-two-column">
+                <figure>
+                  <img src="images/clients/c.jpg" alt="client review" />
+                </figure>
+                <div class="client-data-details">
+                  <p>Swati Jadhav</p>
+                  <p>Web Designer</p>
+                </div>
+              </div>
+            </div>
+            <!-- section end -->
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+
+    <!---------------------------------
+         Freelancing section  
+    ------------------------------------>
+    <section class="section section-freelancing">
+      <div class="overlay"></div>
+      <div class="container">
+        <h2>I am <span>available</span> for freelancing</h2>
+        <p>
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry
+        </p>
+        <a href="/contact.html" class="btn"> HIRE ME</a>
+      </div>
+    </section>
+
+    <!---------------------------------
+        Contact Us section
+    ------------------------------------>
+    <section class="section section-contact">
+      <div class="container">
+        <h2 class="common-heading">contact us</h2>
+      </div>
+      <div class="section-contact-main container">
+        <form action="https://formspree.io/f/mvolejrn" method="POST">
+          <div class="grid grid-two-column">
+            <!-- User Name -->
+            <div>
+              <label for="username"></label>
+              <input
+                type="text"
+                name="username"
+                id="username"
+                required
+                placeholder="Name"
+                autocomplete="off"
+              />
+            </div>
+            <!-- User Email Address -->
+            <div>
+              <label for="email"></label>
+              <input
+                type="email"
+                name="email"
+                required
+                id="email"
+                placeholder="Email"
+                autocomplete="false"
+              />
+            </div>
+          </div>
+          <!-- Subject -->
+          <div>
+            <label for="subject"></label>
+            <input
+              type="text"
+              name="subject"
+              required
+              placeholder="Subject"
+              autocomplete="off"
+            />
+          </div>
+          <!-- User Message -->
+          <div>
+            <label for="message"></label>
+            <textarea
+              name="message"
+              id="message"
+              cols="30"
+              rows="10"
+              required
+              minlength="5"
+              placeholder="Message"
+            ></textarea>
+          </div>
+          <!-- a question -->
+          <div>
+            <p>How do you make the number &quot;one&quot; disappear?</p>
+            <input type="text" name="answer" autocomplete="off" />
+          </div>
+          <!-- Submit Button -->
+          <div>
+            <input type="submit" value="send message" class="btn" />
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!---------------------------------
+         Footer section  
+    ------------------------------------>
+    <footer class="section section-footer section--hidden">
+      <div class="container grid grid-four-column">
+        <div class="f-about">
+          <h3>About</h3>
+          <p>
+            Innovative web developer with over 2 years of front-end experience
+            and passion for responsive website design. Seeking for new
+            opportunities and challenges that will expand my skill set.Capable
+            of continuous learning from senior developers.
+          </p>
+        </div>
+        <div class="f-links">
+          <h3>Links</h3>
+          <ul>
+            <li>
+              <span> <ion-icon name="arrow-forward-outline"></ion-icon> </span
+              ><a href="#">home</a>
+            </li>
+            <li>
+              <span> <ion-icon name="arrow-forward-outline"></ion-icon> </span
+              ><a href="#">about</a>
+            </li>
+            <li>
+              <span> <ion-icon name="arrow-forward-outline"></ion-icon> </span
+              ><a href="#">service</a>
+            </li>
+            <li>
+              <span> <ion-icon name="arrow-forward-outline"></ion-icon> </span
+              ><a href="#">portfolio</a>
+            </li>
+
+            <li>
+              <span> <ion-icon name="arrow-forward-outline"></ion-icon> </span
+              ><a href="#">contact</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="f-services">
+          <h3>Services</h3>
+          <ul>
+            <li>
+              <span> <ion-icon name="arrow-forward-outline"></ion-icon> </span
+              ><a href="#">web design</a>
+            </li>
+            <li>
+              <span> <ion-icon name="arrow-forward-outline"></ion-icon> </span
+              ><a href="#">web design</a>
+            </li>
+            <li>
+              <span> <ion-icon name="arrow-forward-outline"></ion-icon> </span
+              ><a href="#">web design</a>
+            </li>
+
+            <li>
+              <span> <ion-icon name="arrow-forward-outline"></ion-icon> </span
+              ><a href="#">web design</a>
+            </li>
+            <li>
+              <span> <ion-icon name="arrow-forward-outline"></ion-icon> </span
+              ><a href="#">web design</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="f-address">
+          <h3>Have a Questions?</h3>
+          <address>
+            <div>
+              <p>
+                <span>
+                  <ion-icon name="location-outline"></ion-icon>
+                </span>
+                Stuttgart, Germany
+              </p>
+            </div>
+            <div>
+              <p>
+                <span>
+                  <ion-icon name="call-outline"></ion-icon>
+                </span>
+                +49 1631257199
+              </p>
+            </div>
+            <div>
+              <p>
+                <span>
+                  <ion-icon name="mail-outline"></ion-icon>
+                </span>
+                maske.arti95@gmail.com
+              </p>
+            </div>
+          </address>
+        </div>
+      </div>
+      <div class="container">
+        <div class="f-social-icons">
+          <a href="https://www.linkedin.com/in/arti-m-aaa30091/">
+            <ion-icon class="icons" name="logo-linkedin"></ion-icon>
+          </a>
+          <a href="https://github.com/ArtiMaske">
+            <ion-icon class="icons" name="logo-github"></ion-icon>
+          </a>
+          <a href="#">
+            <ion-icon class="icons" name="logo-instagram"></ion-icon>
+          </a>
+        </div>
+        <div class="f-credits">
+          <p>Copyright ©2022 All rights reserved | Arti Maske</p>
+        </div>
+      </div>
+    </footer>
+
+    <!---------------------------------
+         scroll to top section 
+    ------------------------------------>
+    <div class="scrollTop-style">
+      <ion-icon name="arrow-up-outline" class="scroll-top"></ion-icon>
+    </div>
+
+    <!---------------------------------
+         Script tag  
+    ------------------------------------>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
